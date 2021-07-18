@@ -101,9 +101,9 @@ body{
 
 // title home
 .custome-title-home{
-    
-    margin-top: 10em;
-    margin-bottom: 15em;
+    margin-top: 15%;
+    margin-bottom: 15%;    
+
     h1{
         font-weight: 700;
         font-size: 4rem;
@@ -150,13 +150,18 @@ body{
 
 
 .container-fluid{
-    width: 88%;
-    margin-top: 3rem;
+    // width: 88%;
+    // margin-top: 3rem;
 
     .custome-left-menu{
+        background-color: red;
+        padding: 20px;
+        
+        
         .card{
             border-radius: 20px;
             background-color: #FFFFFF;
+            margin-left: 25%;
             .card-body{
                 background-color: #A0855B;
                 border-radius: 20px;
@@ -188,14 +193,30 @@ body{
             }
             
         }
-    }
-
-    .card-footer{
+        .card-footer{
+            margin-left: 25%;
             background-color: #FFFFFF;
             border-radius: 20px;
         }
+
+        @media screen and (max-width: 768px) {
+            padding: 30px;
+
+            .card{
+                margin-left: 0;
+            }
+
+            .card-footer{
+                margin-left: 0;
+            }
+
+        }
+    }
+
+    
     
     .custome-left-menuBestDeals{
+        margin-left: 25%;
         h5{
             border-bottom: dashed;
             border-color: $secondaryColor;
@@ -231,20 +252,22 @@ body{
     }
 
     .custome-right-menu{
+        background-color: aqua;
+        margin-right: 10%;
         .card{
             border-radius: 20px;
-            width: 15rem;
-            margin-top: 5%;
-            margin-left: 10px;
+            width: 17rem;
+            height: auto;
+            margin-bottom: 5%;
             .card-body{
                 border-radius: 20px 20px 0 0;
                 .like{
                     font-size: 1.5rem;
                 }
                 img{
-                    width: 165px;
-                    height: 160px;
-                    margin-left: 15px;
+                    width: 145px;
+                    height: 140px;
+                    margin-left: 42px;
                     transition: 1s;
                 }
                 img:hover{
@@ -325,21 +348,24 @@ body{
             
             
         }
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+            padding: 0 15px;
+        }
         
     }
 
     @media screen and (max-width: 768px) {
-        .container-fluid{
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
+        
+            // width: 95%;
+            // padding: 0;
+            // margin: 0;
+        
     }
 }
 
 .container{
-    // background-color: aqua;
-    margin-top: 18%;
     
     .modal{
         .modal-header{
@@ -480,15 +506,19 @@ body{
 
     .voucher{
         border: none;
+        padding: 0 30px;
         img{
             border-radius: 20px;
             width: 350px;
             height: 170px;
         }
-    }
 
-    @media screen and (max-width: 768px) {
-        margin-top: -55%;
+        @media screen and (max-width: 768px) {
+            img{
+                width: 300px;
+                height: 150px;
+            }
+        }
     }
 
 }
@@ -579,25 +609,30 @@ body{
 }
 
 footer{
-    border-top: 5px solid $primaryColor;
     padding: 2rem 0;
-    background-color: #FFFFFF;
-    .d-flex{
-        :nth-child(1){
-            color: black;
-        }
-        :nth-child(2){
-            color: #125D98;
-        }
-        :nth-child(3){
-            color: $primaryColor;
-        }
-        :nth-child(4){
-            color: #39A2DB;
-        }
+    background-color: #A0855B;
+    h1{
+        color: $primaryColor;
+    }
+        
         .icon-footer{
             margin: 20px;
             font-size: 2rem;
+            color: black;
         }
-    }
+        .icon-footer-1{
+            margin: 20px;
+            font-size: 2rem;
+            color: #284E78;
+        }
+        .icon-footer-2{
+            margin: 20px;
+            font-size: 2rem;
+            color: $primaryColor;
+        }
+        .icon-footer-3{
+            margin: 20px;
+            font-size: 2rem;
+            color: #39A2DB;
+        }
 }
