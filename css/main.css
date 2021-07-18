@@ -137,7 +137,6 @@ body::before {
 }
 
 .container-fluid .custome-left-menu {
-  background-color: red;
   padding: 20px;
 }
 
@@ -234,7 +233,6 @@ body::before {
 }
 
 .container-fluid .custome-right-menu {
-  background-color: aqua;
   margin-right: 10%;
 }
 
@@ -527,12 +525,13 @@ body::before {
 .wrapper-carousel .carousel-custome {
   max-width: 1200px;
   margin: auto;
-  padding: 0 30px;
 }
 
 .wrapper-carousel .carousel-custome .card-custome {
   max-height: 400px;
   max-width: 250px;
+  padding: 0 10px;
+  margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,8 +539,10 @@ body::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: 20px 60px;
   border-radius: 10px;
   border: 1px solid #f35ca3;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -552,7 +553,6 @@ body::before {
   max-width: 140px;
   min-height: 150px;
   border-radius: 10px;
-  margin-left: 3.4rem;
   margin-top: 20px;
 }
 
@@ -567,10 +567,7 @@ body::before {
 
 @media screen and (max-width: 768px) {
   .wrapper-carousel .carousel-custome .card-custome {
-    margin: 20px 40px;
-  }
-  .wrapper-carousel .carousel-custome .card-custome img {
-    margin-left: 3rem;
+    margin-left: 60px;
   }
   .wrapper-carousel .carousel-custome .card-custome p {
     font-size: 0.6rem;
